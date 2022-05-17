@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-*">
+        <meta name="viewport" content="width=device-width, intital-scale=1.0">
+        <title>DevHarris Portfolio Website </title>
+        <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" 
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Titillium+Web&display=swap">
+
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!-- Intro -->
+        <header> 
+            <div class = "logo">
+                <img src="pics/logo-transparent.png" alt="" class="intro__logo">
+            </div>
+
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#skills" class="nav__link">My Skills</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Introduction Section-->
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                 <strong>Weather Widget</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Keeping Me Up to Date On The Weather</p>
+            <img src="Pics/weather_widget.PNG" alt="the weather widget" class="intro__img">
+        </section>
+    <div class="portfolio-description">
+        <p>The first screen the user is shown is the current weather information about Chicago. The top of the screen is populated by the name of the selected city, the coordinates, the temperature, and the drop down menu. The center of the screen has an image that represents the current weather type. For example, "Rain" will be accompanied by a picture of rain, and "Clouds" will have a picture of a cloudy sky. Also in the middle of the screen is date and time information. This information is relative to the selected city. Finally, the bottom of the screen has a chart of 3 metrics used to determine weather conditions, "Humidity", "Wind Speed", and "Visibility".</p>
+        <div class="portfolio-item-row">
+            <div class="item-column">
+                <img src="Pics/long-weather-widget-1.png" class="portfolio__items">
+            </div>
+            <div class="item-column">
+                <img src="Pics/long-weather-widget-2.png" class="portfolio__items">
+            </div>
+        </div>
+        <p>I created Weather Widget because I had 2 specifc goals in mind. Firstly, I wanted to learn how to use Java to make applications, so this project was done entirely in Java using the JavaFX framework. Secondly, I wanted to learn more about APIs, and in this project I used the<a href="https://openweathermap.org/"> OpenWeather</a> API. I learned how to make http requests to a webserver using Java. I also learned how to parse through the retrieved data, which was formatted as a JSON. Even though I completed my goals, this project is not done. I believe I can improve on it some more. For example, I plan on changing from a drop down selection to a search bar. This will allow the user to inquire about any city's weather, instead of a select few. I also will add an option to change the measuremeents between Imperial and Metric. Currently, there is a mix between the two systems.</p>
+     </div>
+
+         <!--Footer-->
+         <footer class="footer">
+            <a class="footer__link">harris.tanweer02@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.instagram.com/harris_tanweer/">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/harris-tanweer-9840121ba/">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="index.js"></script>
+    </body>
+</html>

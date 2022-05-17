@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-*">
+        <meta name="viewport" content="width=device-width, intital-scale=1.0">
+        <title>DevHarris Portfolio Website </title>
+        <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" 
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Titillium+Web&display=swap">
+
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!-- Intro -->
+        <header> 
+            <div class = "logo">
+                <img src="pics/logo-transparent.png" alt="" class="intro__logo">
+            </div>
+
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#skills" class="nav__link">My Skills</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Introduction Section-->
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                 <strong>City Library</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">All the Documents You Need</p>
+            <img src="Pics/welcome_pic.PNG" alt="the weather widget" class="intro__img">
+        </section>
+    <div class="portfolio-description">
+        <p>When the user first enters the site they are greeted by a welcome page with 2 login fields and a link to a sign up page. The user can log in with either an admin account or a member account. When logged in the user taken to the welcome page, and from there the user can do a a variety of operations. For a member, they can search for a document in our database, either a book, dvd, or a journal. Once they search a user can reserve the document, and a member can reserve up to 5 documents at a given time. A member can also return a document and are charged a fine of 50 cents per day over 3 days. Moving on, the admins have the same capabilities as memebrs and more. Admin's can insert a new document and search the status (if the document is checked out) of a document. The admin also has several links to reports on different statistics. For example, an admin can see the top ten most frequent borrowers or the top ten most borrowed books.</p>
+        <div class="portfolio-item-row">
+            <div class="item-column">
+                <img src="Pics/search_book_pic.PNG" class="portfolio__items">
+            </div>
+            <div class="item-column">
+                <img src="Pics/searched_books_pic.PNG" class="portfolio__items">
+            </div>
+        </div>
+        <p>The City Library was created as a school project in my Introduction to Database Systems course at Lake Forest College. In this project I was tasked to design a database with a graphical user interface using PHP, MySQL, and HTML. This project taught me how to create Enhanced Entity-Relationship diagram, convert that to a Relational data model, and finally create a fully functioning database using MySQL. I used HTML and CSS to create a coherent graphical user interface and then used PHP to allow the user to interact with the database. Though this project has been turned in, it is by no means finished. For example, the first thing I will add is a more enticing interface. While it has the functionality needed it is not as styled as I would like it to be. I will accomplish that using HTML and CSS. Next, I will add an encryption system to the users login details. As of now, the users details are plainly stored in the database.</p>
+     </div>
+
+         <!--Footer-->
+         <footer class="footer">
+            <a class="footer__link">harris.tanweer02@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.instagram.com/harris_tanweer/">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/harris-tanweer-9840121ba/">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        <script src="index.js"></script>
+    </body>
+</html>
